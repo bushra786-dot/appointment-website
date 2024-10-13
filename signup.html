@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    
+</head>
+<body>
+    <div class="container">
+        <form action="/signup" method="get">
+            <div class="signup">
+                <h2>Sign up</h2>
+                <p>
+                    First Name:<input type="text" name="name1" id="name1">Last Name:<input type="text" name="name2" id="name2">
+                </p>
+                <p>Email:
+                    <input type="email" name="email1" id="email1">
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        Male:<input type="radio" name="Gender" id="male">Female:<input type="radio" name="Gender" id="female">
+                    </fieldset>
+                </p>
+                <p>Address:
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </p>
+                <p>Contact Number:
+                    <input type="number" name="number" id="number">
+                </p>
+                <p>Password:
+                    <input type="password" name="password" id="password">
+                </p>
+                <p>Remember me:
+                    <input type="checkbox" name="Remember" id="Remember">
+                </p>
+                <p>
+                    <a href="/login" class="signup-button">Sign Up</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

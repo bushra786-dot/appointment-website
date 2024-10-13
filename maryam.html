@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR.MARYAM RIAZ</title>
+    <script>
+        // Function to disable selected options
+        function disableSelectedOptions() {
+            var select = document.getElementById('timeSelector');
+            var selectedValue = select.value;
+            var options = select.options;
+            for (var i = 0; i < options.length; i++) {
+                if (options[i].value !== "" && options[i].value === selectedValue) {
+                    options[i].disabled = true;
+                }
+            }
+        }
+    </script>
+   
+   <style>
+    /* General Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3, h4, h5 {
+        color: #333;
+        text-align: center;
+    }
+
+    /* Form Styles */
+    form {
+        margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #3498db;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #2980b9;
+    }
+
+    .back-to-home {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #3498db;
+    }
+
+    .back-to-home:hover {
+        color: #2980b9;
+    }
+
+    /* Expander-Compressor Button Styles */
+    .expander-compressor {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .expander-compressor:hover {
+        background-color: #2980b9;
+    }
+
+    .expanded-content {
+        display: none;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .expander-compressor.active + .expanded-content {
+        display: block;
+    }
+</style>
+     
+</head>
+<div class="appointment_text1">
+<h1>BOOK YOUR<br>APPOINTMENT</h1>
+</div>
+<body>
+   
+    
+    <div class="container">
+    <a href="#"><img src="img/doctor_female.png" alt=""></a>
+    <h2>DR.MARYAM RIAZ</h2><label for="availabilitySelector">Select  Availability:-</label>
+ 
+    <h4>MON-THUR</h4>
+    <button class="expander-compressor" onclick="toggleContent()">Shedule</button>
+    
+    <div class="expanded-content">
+        <p>   &nbsp;MORNING TIMINGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EVENING TIMINGS<br><br>
+          9:00 AM - 9:05 AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6:00 PM - 6:05 PM<br>
+          9:10 AM - 9:15 AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6:10 PM - 6:15 PM<br>
+          9:20 AM - 9:25 AM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6:20 PM - 6:25 PM<br>
+        </p>
+    </div>
+    <form onsubmit="return showPopup()">
+        <!-- Your form fields go here -->
+    <p>Name:
+        <input type="text" name="name" id="name">        
+    </p>
+    
+    <p>Doctor Name:
+        <input type="text" name="doctor_name" id="doctor_name">
+    </p>
+    <p>Appointment Day:
+    <select  id="daySelector" name="day">
+        <option value="" disabled selected>Select a day</option>
+        <option value="monday">MONDAY</option>
+        <option value="tuesday">TUESDAY</option>
+        <option value="wednesday">WEDNESDAY</option>
+        <option value="thursday">THURSDAY</option>
+     
+    </select>
+    </p>
+    <p>Appointment Date:
+        <input type="date" name="datetime" id="datetime">       
+    </p>
+    <p>Appointment Timing:
+        <select id="timeSelector" name="time" onchange="disableSelectedOptions()">
+            <option value="" disabled selected>Select Morning time</option>
+            <option value="time1">9:00 AM - 9:05 AM</option>
+            <option value="time2">9:10 AM - 9:15 AM</option>
+            <option value="time3">9:20 AM - 9:25 AM</option>
+            <option value="" disabled selected>Select Evening time</option>
+            <option value="time4">6:00 PM - 6:05 PM</option>                             
+            <option value="time5">6:10 PM - 6:15 PM</option>
+            <option value="time6">6:20 PM - 6:25 PM</option>
+        </select>
+    </p>
+    <p>Doctors fee:- 1000<br>
+   </p>
+   <h5 >Total fee:- 1000 Rs</h5>
+    <p>
+        <input type="submit" value="submit">
+    </p>
+    </form>
+    <a href="/home" class="back-to-home">&#8592; Back to Home</a>    
+</body>
+<script>
+    function toggleContent() {
+        var expanderCompressor = document.querySelector('.expander-compressor');
+        expanderCompressor.classList.toggle('active');
+    }
+    function showPopup() {
+    // Show a simple alert when the form is submitted
+    alert("Appointment booked successfully!");
+    return true; // Submit the form
+  }
+    
+
+</script>
+</div>
+</html>

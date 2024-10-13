@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="login.css"> <!-- Include your CSS file -->
+    <style>
+        /* Additional styles specific to this page */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+        }
+
+        .login, .signup {
+            width: 400px;
+            margin: 0 20px;
+            padding: 20px;
+            height: 30%;
+            border-radius: 5px;
+        }
+
+        /* Common styles for buttons */
+        .btn {
+            padding: 11px 40px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* Style for login and signup buttons */
+        .login-btn, .signup-btn {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+            background-color: #34db87;
+            color: #ffffff;
+        }
+
+        .login-btn:hover, .signup-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="login">
+            <h2>Log In</h2>
+            <form action="/login" method="post">
+                <p>user name*:
+                    <input type="text" name="name"placeholder="Enter the name" id="name">
+                </p>
+                <p>Password*:
+                    <input type="password" name="password" placeholder="Enter the password" id="password">
+                </p>
+        <p>
+            <a href="/find_doctors" class="signup-button">Log in</a>
+        </p>
+        <p >Creat account:<a href="/signup" type="submit" >Sign up here</a>
+            
+        </p>
+    </form>        
+    </div>
+     
+</body>
+</html>
+

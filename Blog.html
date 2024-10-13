@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Blog Layout</title>
+  <style>
+    /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header Styles */
+.logo {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.website_name {
+  margin: 0;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.flex-align-right {
+  margin-left: auto;
+}
+
+.flex-align-right1 {
+  margin-left: auto;
+}
+
+/* Main Styles */
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.blog {
+  width: 30%;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.blog:hover {
+  transform: translateY(-5px);
+}
+
+.blog img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-content {
+  margin-top: 10px;
+}
+
+.full-content {
+  display: none;
+}
+
+.full-content.active {
+  display: block;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.fruit {
+  margin: 20px;
+}
+
+.images {
+  margin-top: 20px;
+}
+
+.images img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+
+
+
+    
+          
+        
+        
+        
+  </style>
+  
+ 
+  
+  <header class="background"></header>
+</head>
+<body>
+  <nav>
+    <br><br><br>
+    
+        
+      <a class="menu-btn" href="/home">Home</a>
+      <a class="menu-btn" href="/about" >About us</a>
+      <a class="menu-btn" href="/blog">Blogs</a>
+      <a class="menu-btn" href="#">Lab Tests</a>
+      <a class="menu-btn" href="#">Join as a Doctor</a>
+      <a class="menu-btn" href="/contact">Contact us</a>
+      
+  </nav>
+  <main>
+    <br><br><br>
+
+  
+  <div class="blog-container">
+    <div class="blog">
+      <img src="img/fruit3.PNG" alt="Image 1">
+      <div class="blog-content">
+        <h3>Article 1</h3>
+        <p>Short description of Article 1.</p>
+        <div class="full-content">
+          <p>Mangoes, often hailed as the 'King of Fruits,' are revered for their delicious taste and numerous health benefits. Native to various regions worldwide, mangoes are naturally sweet and can be enjoyed fresh or incorporated into various culinary delights, beverages, and desserts. With a wide array of varieties boasting different colors, flavors, and sizes, mangoes can range from vibrant yellow and orange to deep red and green hues.
+
+            Mango Nutrition Facts
+            Mangoes are a nutritional powerhouse, packed with essential vitamins and minerals that contribute to overall health and well-being. Rich in natural sugars, mangoes offer a sweet indulgence while providing vital energy. A single cup of sliced mango contains approximately 100 calories and offers an abundance of nutrients, including vitamin C, vitamin A, potassium, and folate.
+            
+            These succulent fruits are also a rich source of dietary fiber, with each cup providing about 3 grams. Fiber plays a crucial role in promoting digestive health, aiding in satiety, and helping to regulate cholesterol levels.
+            
+            Mangoes are particularly notable for their high vitamin C content, which supports immune function and boosts collagen production for healthy skin. Additionally, the fruit contains significant amounts of vitamin A, contributing to vision health and maintaining mucous membranes.
+            
+            Mangoes are also rich in antioxidants, such as beta-carotene and flavonoids, which help combat oxidative stress and protect against cellular damage. These compounds contribute to the fruit's anti-inflammatory properties and may reduce the risk of chronic diseases.
+            
+            Mango Benefits
+            The consumption of mangoes offers a multitude of health benefits, making them a valuable addition to a balanced diet. Here are some of the key advantages of incorporating mangoes into your meals:
+            
+            Immune Support: Mangoes are rich in vitamin C, which strengthens the immune system and helps the body fight off infections and illnesses.
+            Digestive Health: The fiber content in mangoes aids in digestion, prevents constipation, and supports a healthy gut microbiome.
+            Skin Health: The vitamin A and antioxidants in mangoes promote skin health, reduce signs of aging, and improve complexion.
+            Eye Health: Mangoes contain compounds like beta-carotene and lutein, which protect against age-related macular degeneration and maintain vision health.
+            Heart Health: The potassium and magnesium in mangoes help regulate blood pressure and support cardiovascular health, reducing the risk of heart disease.
+            Cancer Prevention: The antioxidants in mangoes may help prevent cancer by neutralizing free radicals and inhibiting the growth of cancer cells.
+            Weight Management: Despite their sweetness, mangoes are low in calories and high in fiber, promoting satiety and aiding in weight management.
+            Bone Health: Mangoes are a good source of vitamin K and calcium, essential for bone strength and density.
+            Alkalizing Properties: Mangoes have alkalizing properties that help balance the body's pH levels and reduce acidity.
+            Hydration: With their high water content, mangoes help keep the body hydrated and support overall hydration levels.
+            In conclusion, mangoes are not only delicious but also offer a wide range of health benefits. Whether enjoyed fresh, blended into smoothies, or added to savory dishes, mangoes are a versatile and nutritious addition to any diet."
+            
+            
+            
+            
+            
+            
+            .</p>
+        </div>
+      </div>
+    </div>
+    <div class="blog">
+      <img src="img/doctor_PNG.png" alt="Image 2">
+      <div class="blog-content">
+        <h3>Article 2</h3>
+        <p>Short description of Article 2.</p>
+        <div class="full-content">
+          <p>Full content of Article 2.</p>
+        </div>
+      </div>
+    </div>
+    <div class="blog">
+      <img src="img/fruit1.PNG" alt="Image 3">
+      <div class="blog-content">
+        <h3>Article 3</h3>
+        <p>Short description of Article 3.</p>
+        <div class="full-content">
+          <p>Full content of Article 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <a href="apple.html" class="Apple">SHAHAN HOSPITAL<a>
+    
+    <div class="fruit">
+    <p>Book appointments with the best Doctors and Specialists such as Gynecologists, Skin Specialists, Child Specialists, Surgeons, etc. Avail test services such as MRI, CT scan, Ultrasound, X-Ray, etc. and Online Doctor Video Consultations all across Pakistan conveniently.</p></div>
+    
+   
+    <a href="/about">About us</a>
+    <a href="/contact">Contact us</a>
+    <a class="copy">Copyright@2024/2030</a>
+    <div class="images">
+    <img class="twitter" src="img/twitter.png" alt="">
+    <img class="facebook" src="img/facebook.png" alt="">
+    <img class="instagram" src="img/instagram.png" alt=""></div>
+    
+    
+
+</footer>
+</body>
+
+  <script>
+    document.querySelectorAll('.blog').forEach(blog => {
+      blog.addEventListener('click', () => {
+        blog.querySelector('.full-content').classList.toggle('active');
+      });
+    });
+  </script>
+
+</html>
